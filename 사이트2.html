@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html{scroll-behavior: smooth;}
+        body {margin: 0; font-family: 'Roboto', sans-serif; background-color: #f4f4f4; color: #333;}
+        header {background-color: #4CAF50; color: white; padding: 16px; text-align: center;}
+        nav {display: flex; justify-content: center; background-color: #333;}
+        nav a {color: white; text-decoration: none; padding: 12px 24px;}
+        nav a:hover {background-color: #4CAF50;}
+        .hero {text-align: center; padding: 32px; background: linear-gradient(to right, #4CAF50, #81C784); color: white; }
+        .hero h1 {margin: 0; font-size: 48px; animation: fadeIn 2s ease-in-out;}
+        .hero p {font-size: 20px;}
+        .con {padding: 32px;}
+        .project {display: flex; flex-wrap: wrap; gap: 16px;}
+        .project-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            flex: 1 1 calc(33% - 32px);
+            max-width: calc(33% - 32px);
+            min-width: 250px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {transform: translateY(-10px);}
+        .project-card img {width: 100%; height: 200px; object-fit: cover;}
+        .project-card h3 {margin: 0; padding: 8px; font-size: 20px;}
+        .project-card p {padding: 8px; font-size: 14px;}
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 16px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>2번사이트</h1>
+    </header>
+    <nav>
+        <a href="#about">소개</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#con">연락처</a>
+    </nav>
+    <div class="hero">
+        <h1>Hello World2</h1>
+        <p>오신것을 환영합니다.</p>
+    </div>
+    <div class="con" id="about">
+        <h2>소개</h2>
+        <p>안녕하세요! 항상 열심히하겠습니다!</p>
+    </div>
+    <div class="con" id="projects">
+        <h2>프로젝트</h2>
+        <div class="project">
+            <div class="project-card">
+                <img src="img2/icon1.png" alt="프로젝트 1">
+                <h3>프로젝트 1</h3>
+                <p>첫 번째 프로젝트의 설명입니다..!</p>
+            </div>
+            <div class="project-card">
+                <img src="img2/icon2.png" alt="프로젝트 2">
+                <h3>프로젝트 2</h3>
+                <p>두 번째 프로젝트의 설명입니다..</p>
+            </div>
+            <div class="project-card">
+                <img src="img2/icon3.png" alt="프로젝트 3">
+                <h3>프로젝트 3</h3>
+                <p>세 번째 프로젝트의 설명입니다.</p>
+            </div>
+        </div>
+    </div>
+    <div class="con" id="con1">
+        <h2>연락처</h2>
+        <p></p>
+        <p>이메일: 248pajusi@naver.com</p>
+    </div>
+    <footer>
+        <p>&copy; 2025/01/11</p>
+    </footer>
+</body>
+</html>
